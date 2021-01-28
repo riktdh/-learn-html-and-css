@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            background: #f2fcff;
+            padding-top: 15px;
+            width: 100%;
+            height: auto;
+        }
+        .nav-item{
+            width: 85%;
+            margin: auto;
+        }
+        .nav-left{
+            display:inline-flex;
+        }
+        .logo{
+            width: 155px;
+            height: 100px;
+        }
+        .logo img{
+            padding: 13px;
+            width: 100%;
+            height: 100%;
+        }
+        .logo-name{
+            padding: 15px;
+        }
+        .logo-name h1{
+            font-size: 37px;
+            font-family: revert;
+            color:#00ccff;
+        }
+        .logo-name h2{
+            font-style: normal;
+            font-size: 14px;
+            font-family: 'open sans';
+            color: #cccccc;
+            letter-spacing: 2px;
+        }
+        .nav-right{
+            display: inline-flex;
+            float: right;
+        }
+        .nav-link{
+            display: inline-flex;
+            padding: 30px;
+            padding-right: 0;
+        }
+        .link-item{
+            margin-left: 25px;
+            font-size: 20px;
+        }
+        #main{
+            overflow: hidden;
+        }
+        #figure{
+            width:500%;
+            position: relative;
+            margin: 0;
+            animation: 20s anm infinite;
+        }
+        .img{
+            width: 20%;
+            height: 450px;
+            float: left;   
+        }
+        @keyframes anm{
+            0%,    10%{left: 0;}
+            20%, 30%{left: -100%;}
+            40%,   50%{left: -200%;}
+            60%, 70%{left: -300%;}
+            8o%,   90%{left: -400;}
+        }
+        .section-1{
+            display: flex;
+            margin: auto;
+            width: 85%;
+            height:450px;
+        }
+        .section-1-text{
+            width: 60%;
+            height: 400px;
+        }
+        .section-1-img{
+            width: 40%;
+            float: right;
+            height: 450px;
+        }
+        .section-1-text h2{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 50px;
+            padding: 25px;
+        }
+        .section-1-text p{
+            font-size: 16px;
+            padding: 30px;
+        }
+        .section-1-button{
+            background: #00ffe7;
+            width: 110px;
+            height: 30px;
+            border: none;
+            margin: 20px;
+            border-radius: 12px;    
+        }
+        .section-1-img img{
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+        
+        }
+        .section-2{
+            background: #f2f2f2;
+            width: 85%;
+            margin: auto;
+            display: flex;
+            height: 450px;
+        }
+        .section-2-img{
+            width: 40%;
+            height: 450px;
+        }
+        .section-2-img img{
+            width: 140%;
+            height: 100%;
+            margin-left: -90px;
+        }
+        .section-2-text{
+            width: 60%;
+            height: 450px;
+        }
+        .section-2-text h2{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 50px;
+            padding: 25px;
+        }
+        .section-2-text p{
+            font-size: 16px;
+             padding: 30px;
+        }
+        .section-2-button{
+            background: #00ffe7;
+            width: 110px;
+            height: 30px;
+            border: none;
+            margin: 20px;
+            border-radius: 12px;    
+        }
+        .img-section{
+            background: url(img/5.png);
+            background-size: cover;
+            width: 100%;
+            height: 570px;
+        }
+        .img-section-text{
+            width: 85%;
+            margin: auto;
+            padding: 150px;
+            list-style: none;
+        }
+        .img-section-text h2{
+            color: white;
+            font-size: 36px;
+            padding-bottom: 15px;
+        }
+        .img-section-text ul{
+            list-style: none;
+            color: white;
+            font-size: 20px;
+        }
+        .img-section-text ul li{
+            padding-bottom: 11px;
+        }
+        .section-3{
+            padding: 50px;
+            width: 85%;
+            padding-top: 0;
+            margin: auto;
+            text-align: center;
+        }
+        .section-3 h1{
+            font-family: 'Ubuntu', sans-serif;
+            padding: 41px;
+        }
+        .section-3 p{
+            font-size: 20px;
+        }
+        .price-section{
+            width: 1000px;
+            height: 300px;
+            justify-content: space-between;
+            display: flex;
+            margin: auto;
+        }
+        .price-card{
+            width: 480px;
+            display: flex;
+            height: 280px;
+            background: #f2f2f2;
+            margin: 10px;
+        }
+        .price-img{
+            width: 50%;
+            height: auto;
+        }
+        .price-img img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .price-text{
+            width: 50%;
+            height: auto;
+            text-align: left;
+        }
+        .price-text ul{
+            padding: 40px;
+        }
+        .price-text ul li{
+            list-style: none;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-item">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="img/2.png">
+                </div>
+                <div class="logo-name">
+                    <h1>SMART PHONES</h1>
+                    <h2>More than Just a mobile phone</h2>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-link">
+                    <div class="link-item" style="color: #00aad4">HOME</div>
+                    <div class="link-item">ABOUT US</div>
+                    <div class="link-item">MOBILE PHONES</div>
+                    <div class="link-item">CONTACT US</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <figure id="figure">
+            <img src="img/3.png" alt="" class="img">
+            <img src="img/3.png" alt="" class="img">
+            <img src="img/3.png" alt="" class="img">
+            <img src="img/3.png" alt="" class="img">
+            <img src="img/3.png" alt="" class="img">
+        </figure>
+    </div>
+
+    <div  class="section-1">
+        <div class="section-1-text">
+            <h2>Buy your <span style="color:#00aad4;">drem phone</span><br>at a reasonable price</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br>
+
+                labore et dolore magna aliqua.
+                Ut enim ad minim veniam,
+                 quis nostrud exercitation ullamco<br>
+                  laboris nisi ut aliquip ex ea 
+                commodo consequat. <br>
+                <br>
+                <br>
+                Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum
+                 dolore eu fugiat nulla <br>
+                 pariatur. Excepteur sint occaecat <br> cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <button type="submit" class="section-1-button">READ More</button>
+        </div>
+        <div class="section-1-img">
+            <img src="img/4.png"
+        </div>
+        </div>
+    </div>
+
+   <div style="width: 100%; background: #f2f2f2;">
+    <div class="section-2">
+        <div class="section-2-img">
+            <img src="img/1.png">
+        </div>
+        <div class="section-2-text">
+            <h2>Mobile Phones</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br>
+
+                labore et dolore magna aliqua.
+                Ut enim ad minim veniam,
+                 quis nostrud exercitation ullamco<br>
+                  laboris nisi ut aliquip ex ea 
+                commodo consequat. <br>
+                <br>
+                <br>
+                Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum
+                 dolore eu fugiat nulla <br>
+                 pariatur. Excepteur sint occaecat <br> cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <button type="submit" class="section-1-button">READ More</button>
+        </div>
+    </div>
+   </div>
+
+    <div class="img-section">
+        <div class="img-section-text">
+            <h2>Our seeruices</h2>
+            <ul>
+            <li>Lorem ipsum</li>
+            <li>Porttitor senectus</li>
+            <li>Neque  fringilla</li>
+            <li>Litora quam</li>
+            <li>vitae maecenas</li>
+            </ul>  
+        </div>
+    </div>
+
+    <div class="section-3">
+        <h1>What's NEW</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+
+            labore et dolore magna aliqua.
+            Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea 
+            commodo consequat.
+            
+            
+            Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum
+             dolore eu fugiat nulla 
+             pariatur. Excepteur sint occaecatcupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="price-section">
+        <div class="price-card">
+            <div class="price-img">
+                <img src="img/6.png">
+            </div>
+            <div class="price-text">
+                <ul>
+                    <li><b><span style="font-size: 30px;">Motarola</span></b></li>
+                    <li><b><span style="color: #575757; font-size: 15px;">moto g7</span></b></li>
+                    <li><span style="color: #b1b1b1;font-size: 12px;
+                        letter-spacing: 1px;">Lorem ipsum dolor sit amet</span></li>
+                    <li style="font-size: 20px;">PRICE:<span style="color: #17b0d6;">$200</span></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="price-card">
+            <div class="price-img">
+                <img src="img/7.png">
+            </div>
+            <div class="price-text">
+                <ul>
+                    <li><b><span style="font-size: 30px;">Motarola</span></b></li>
+                    <li><b><span style="color: #575757; font-size: 15px;">moto g7</span></b></li>
+                    <li><span style="color: #b1b1b1;font-size: 12px;
+                        letter-spacing: 1px;">Lorem ipsum dolor sit amet</span></li>
+                    <li style="font-size: 20px;">PRICE:<span style="color: #17b0d6;">$200</span></li>
+                </ul>
+            </div>
+        </div>      
+    </div>
+    <div class="price-section">
+        <div class="price-card">
+            <div class="price-img">
+                <img src="img/8.png">
+            </div>
+            <div class="price-text">
+                <ul>
+                    <li><b><span style="font-size: 30px;">Motarola</span></b></li>
+                    <li><b><span style="color: #575757; font-size: 15px;">moto g7</span></b></li>
+                    <li><span style="color: #b1b1b1;font-size: 12px;
+                        letter-spacing: 1px;">Lorem ipsum dolor sit amet</span></li>
+                    <li style="font-size: 20px;">PRICE:<span style="color: #17b0d6;">$200</span></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="price-card">
+            <div class="price-img">
+                <img src="img/9.png">
+            </div>
+            <div class="price-text">
+                <ul>
+                    <li><b><span style="font-size: 30px;">Motarola</span></b></li>
+                    <li><b><span style="color: #575757; font-size: 15px;">moto g7</span></b></li>
+                    <li><span style="color: #b1b1b1;font-size: 12px;
+                        letter-spacing: 1px;">Lorem ipsum dolor sit amet</span></li>
+                    <li style="font-size: 20px;">PRICE:<span style="color: #17b0d6;">$200</span></li>
+                </ul>
+            </div>
+        </div> 
+            
+    </div>
+    <div class="price-section">
+        <div class="price-card">
+            <div class="price-img">
+                <img src="img/11.png">
+            </div>
+            <div class="price-text">
+                <ul>
+                    <li><b><span style="font-size: 30px;">Motarola</span></b></li>
+                    <li><b><span style="color: #575757; font-size: 15px;">moto g7</span></b></li>
+                    <li><span style="color: #b1b1b1;font-size: 12px;
+                        letter-spacing: 1px;">Lorem ipsum dolor sit amet</span></li>
+                    <li style="font-size: 20px;">PRICE:<span style="color: #17b0d6;">$200</span></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="price-card">
+            <div class="price-img">
+                <img src="img/10.png">
+            </div>
+            <div class="price-text">
+                <ul>
+                    <li><b><span style="font-size: 30px;">Motarola</span></b></li>
+                    <li><b><span style="color: #575757; font-size: 15px;">moto g7</span></b></li>
+                    <li><span style="color: #b1b1b1;font-size: 12px;
+                        letter-spacing: 1px;">Lorem ipsum dolor sit amet</span></li>
+                    <li style="font-size: 20px;">PRICE:<span style="color: #17b0d6;">$200</span></li>
+                </ul>
+            </div>
+        </div> 
+            
+    </div>
+</body>
+</html>
